@@ -1,13 +1,32 @@
-import React from "react";
+import React, {useState, useEffect} from "react";
 import "./App.css";
+import Nasa from './nasaContainer.js'
+
 
 function App() {
+  const app_key = '080alWlQTVXU8pXOgAa97CcgGsZQmwzAdq91yfhR' 
+  // const api_request = `https://api.nasa.gov/planetary/apod?api_key=${app_key}`
+
+  // const [counter, setCounter] = useState(0)
+
+  
+  const [nasaData, setNasaData] = useState([])
+
+  useEffect(() => {
+    //console.log('Effect is working')
+    getAPI()
+  }, [])
+
+  const getAPI = async () => {
+    const response = await fetch(`https://api.nasa.gov/planetary/apod?api_key=${app_key}`)
+    const data = await response.json()
+    setNasaData(data)
+    console.log(data)
+  }
+
   return (
     <div className="App">
-      <p>
-        Read through the instructions in the README.md file to build your NASA
-        app! Have fun <span role="img" aria-label='go!'>🚀</span>!
-      </p>
+      <Nasa title={nasaData.title} url={nasaData.url} date={nasaData.date} explanation={nasaData.explanation}/>
     </div>
   );
 }

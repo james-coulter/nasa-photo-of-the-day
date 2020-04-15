@@ -1,3 +1,7 @@
+* {
+ box-sizing: border-box;
+}
+
 .App {
   text-align: center;
 }
@@ -36,3 +40,41 @@
     transform: rotate(360deg);
   }
 }
+
+h1 {
+  color: white;
+}
+
+.largeWrapper {
+  margin: 3%;
+  /* border: 2px solid grey;
+  border-radius: 20px;
+  background-color: #3e403e; */
+  color: white;
+}
+
+.imageContainer img {
+  border-radius: 20px;
+}
+
+.largeWrapper p {
+  margin: 2% 15%;
+}
+
+/* .dropdown {
+  position: relative;
+  display: inline-block;
+  width: 100%;
+}
+
+.dropdown-content {
+  display: none;
+  margin: 10%;
+  width: 100%;
+  position: absolute;
+  z-index: 1;
+}
+
+.dropdown:hover .dropdown-content {
+  display: block;
+} */
