@@ -5,14 +5,19 @@ import "./App.css"
 const Nasa = ({title, url, date, explanation}) => {
     return (
         <div className="invisibleDiv">
-        <h1>Today's Photo of the Day</h1>
+            <link href='https://fonts.googleapis.com/css?family=Lato:300,400,700' rel='stylesheet' type='text/css'></link>
+            <div id='stars'></div>
+            <div id='stars2'></div>
+            <div id='stars3'></div>
         <div className="largeWrapper">
+            <h4>{title}</h4>
             <h4>{date}</h4>
-            <h3>{title}</h3>
             <div className="imageContainer">
             <img src={url} alt=""/>
             </div>
+            <div className="explanationWrapper">
             <p>{explanation}</p>
+            </div>
         </div>
         </div>
     )
