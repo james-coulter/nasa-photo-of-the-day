@@ -46,7 +46,7 @@ function App() {
   return (
     <div className="App">
       <Alert color="primary">
-  This is a primary alert — check it out!
+  Welcome! This site automatically generates today's photo of the day provided by the NASA API: APOD. Feel free to change to previous dates to explore previous images.
 </Alert>
       <div className="headerDiv">
       <h1>astronomy picture of the day</h1>
