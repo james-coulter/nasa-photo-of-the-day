@@ -63,7 +63,7 @@ function App() {
     <div id='stars2'></div>
     <div id='stars3'></div>
     </div>
-      <Alert color="primary">
+      <Alert color="primary" className="text-center">
   Welcome! This site automatically generates today's photo of the day provided by the NASA API: APOD. Feel free to change to previous dates to explore previous images.
 </Alert>
       <div className="headerDiv" className="flex flex-wrap justify-center flex-col">
