@@ -1,4 +1,5 @@
 import React, {useState, useEffect} from "react";
+import { Alert } from 'reactstrap';
 import "./App.css";
 import Nasa from './nasaContainer.js'
 
@@ -44,6 +45,9 @@ function App() {
 
   return (
     <div className="App">
+      <Alert color="primary">
+  This is a primary alert — check it out!
+</Alert>
       <div className="headerDiv">
       <h1>astronomy picture of the day</h1>
       <h4 className="smallHeader">created via nasa's open api</h4>
